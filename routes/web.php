@@ -11,10 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'NoticiaController@index');
+Route::get('/agregar', 'NoticiaController@agregar')->name('Noticia.agregar');
+Route::POST('/Agregando', 'NoticiaController@store')->name('Noticia.store');
+Route::get('/noticias', 'NoticiaController@noticias');

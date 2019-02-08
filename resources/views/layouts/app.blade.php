@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -19,89 +21,74 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style-menu.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style-noticias.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/hlw7wjt.css">
+
 </head>
 <body>
     <div id="app">
-      <nav class="navbar navbar-expand-md navbar-light bg-dark navbar-laravel">
-        <div class="container">
-          <div class="navbar-nav mr-auto">
-            <p class="text-white">General Villegas, Viernes 01 de febrero de 2019   <strong>|</strong>  <img height="20" src="img/clima.png" /> T 20° H 61%</p>
+          <div class="barra-clima bg-dark">
+              <div class="container">
+                  <div class="text-white">General Villegas, Viernes 01 de febrero de 2019   <strong>|</strong>  <img height="20" src="img/clima.png" /> <span style="float:right;">T 20° H 61%
+            Compra: U$D 38,50 | Venta: U$D 38,50</span></div>
           </div>
-          <div class="navbar-nav ml-auto">
-            <p class="text-white">Compra: U$D 38,50 | Venta: U$D 38,50</p>
           </div>
-        </div>
-      </nav>
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container">
-              <div id="logo" class="mx-auto"><img height="150" src="img/logo.png" /></div>
+
+          <div class="pos-f-t navbar-responsive" >
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bg-light p-4">
+                <h4 class="text-dark text-center">Categorías en xAcá</h4>
+                <h6 class="text-dark text-center">Destacados </h6>
+                <h6 class="text-dark text-center">Nacionales </h6>
+                <h6 class="text-dark text-center">Provinciales </h6>
+                <h6 class="text-dark text-center">Regionales </h6>
+                <h6 class="text-dark text-center">Sociales </h6>
+                <h6 class="text-dark text-center">Agro </h6>
+              </div>
             </div>
-        </nav>
-        <nav class="navbar navbar-laravel">
+            <nav class="navbar navbar-dark bg-secondary">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <img class="logo-img-responsive" src="img/logo.png" />
+            </nav>
+          </div>
+
+          <div class="container">
+              <div id="logo"><img class="logo-img" src="img/logo.png" /></div>
+          </div>
+
+        <nav id="desktop-menu" class="navbar">
           <div class="container">
             <div class="row text-center" style="width:100%; font-family: 'Open Sans', sans-serif;font-size: 18px;font-weight: bold">
-              <div class="col-md-2" style="background: #112f41;
-      -webkit-transform: skew(-20deg);-moz-transform: skew(-20deg);
-     -ms-transform: skew(-20deg);
-     -o-transform: skew(-20deg);
-     transform: skew(-20deg);">
-
-                    <a  style="color: white;display: block;-webkit-transform: skew(20deg);-moz-transform: skew(20deg);
-                     -ms-transform: skew(20deg);
-                     -o-transform: skew(20deg);
-                     transform: skew(20deg);" href="#">Destacados</a>
+              <div class="col-md-2 fondo-menu" style="background: #112f41;">
+                    <a class="link-menu" href="#">Destacadas</a>
               </div>
-              <div class="col-md-2" style="background: #0894A1;  -webkit-transform: skew(-20deg);-moz-transform: skew(-20deg);
-               -ms-transform: skew(-20deg);
-               -o-transform: skew(-20deg);
-               transform: skew(-20deg);">
-                    <a href="#" style="color: white;display: block;-webkit-transform: skew(20deg);-moz-transform: skew(20deg);
-                     -ms-transform: skew(20deg);
-                     -o-transform: skew(20deg);
-                     transform: skew(20deg);">Nacionales</a>
+              <div class="col-md-2 fondo-menu" style="background: #0894A1;">
+                    <a href="#" class="link-menu">Nacionales</a>
               </div>
-              <div class="col-md-2" style="background: #b51808;  -webkit-transform: skew(-20deg);-moz-transform: skew(-20deg);
-               -ms-transform: skew(-20deg);
-               -o-transform: skew(-20deg);
-               transform: skew(-20deg);">
-                    <a style="color: white;display: block;-webkit-transform: skew(20deg);-moz-transform: skew(20deg);
-                     -ms-transform: skew(20deg);
-                     -o-transform: skew(20deg);
-                     transform: skew(20deg);" href="#">Provinciales</a>
+              <div class="col-md-2 fondo-menu" style="background: #b51808;">
+                    <a class="link-menu" href="#">Provinciales</a>
               </div>
-              <div class="col-md-2" style="background: #ED553B;   -webkit-transform: skew(-20deg);-moz-transform: skew(-20deg);
-               -ms-transform: skew(-20deg);
-               -o-transform: skew(-20deg);
-               transform: skew(-20deg);">
-                    <a style="color: white;display: block;-webkit-transform: skew(20deg);-moz-transform: skew(20deg);
-                     -ms-transform: skew(20deg);
-                     -o-transform: skew(20deg);
-                     transform: skew(20deg);" href="#">Regionales</a>
+              <div class="col-md-2 fondo-menu" style="background: #ED553B;">
+                    <a class="link-menu" href="#">Regionales</a>
               </div>
-              <div class="col-md-2" style="background: #F2B134;   -webkit-transform: skew(-20deg);-moz-transform: skew(-20deg);
-               -ms-transform: skew(-20deg);
-               -o-transform: skew(-20deg);
-               transform: skew(-20deg);">
-                    <a style="color: white;display: block;-webkit-transform: skew(20deg);-moz-transform: skew(20deg);
-                     -ms-transform: skew(20deg);
-                     -o-transform: skew(20deg);
-                     transform: skew(20deg);" href="#">Sociales</a>
+              <div class="col-md-2 fondo-menu" style="background: #F2B134;">
+                    <a class="link-menu" href="#">Sociales</a>
               </div>
-              <div class="col-md-2" style="background: #47AB6C;   -webkit-transform: skew(-20deg);-moz-transform: skew(-20deg);
-               -ms-transform: skew(-20deg);
-               -o-transform: skew(-20deg);
-               transform: skew(-20deg);">
-                    <a style="color: white;display: block;-webkit-transform: skew(20deg);-moz-transform: skew(20deg);
-                     -ms-transform: skew(20deg);
-                     -o-transform: skew(20deg);
-                     transform: skew(20deg);" href="#">Agro</a>
+              <div class="col-md-2 fondo-menu" style="background: #47AB6C;">
+                    <a class="link-menu" href="#">Agro</a>
               </div>
           </div>
         </div>
         </nav>
         <main class="py-4">
-            @yield('desarrollo')
+            @yield('noticias')
+            @yield('agregar')
         </main>
     </div>
+
+    <div id="footer"></div>
 </body>
 </html>

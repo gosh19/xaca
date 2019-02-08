@@ -1,0 +1,99 @@
+@media (min-width: 1024px) { /* PARA PC */
+
+.fondo-menu{
+-webkit-transform: skew(-20deg);
+-moz-transform: skew(-20deg);
+-ms-transform: skew(-20deg);
+-o-transform: skew(-20deg);
+transform: skew(-20deg);
+-webkit-box-shadow: 6px 4px 20px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 4px 20px -1px rgba(0,0,0,0.75);
+box-shadow: 6px 4px 20px -1px rgba(0,0,0,0.75);
+}
+
+.link-menu{
+  color: white;display: block;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+   -ms-transform: skew(20deg);
+   -o-transform: skew(20deg);
+   transform: skew(20deg);
+}
+.contenedor-menu{
+  width:100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.barra-clima{
+width: 100%;
+display:block;
+}
+
+.logo-img{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  height: 130px;
+}
+.logo-img-responsive{
+  display:none;
+}
+
+.navbar-responsive{
+    display: none;
+}
+.navbar-toggler-icon{
+  display: none;
+}
+#desktop-menu{
+  display: block;
+}
+}
+
+@media (min-width: 320px) and (max-width: 768px) { /*CELULARES TABLES RESPONSIVE DESIGN */
+
+  .barra-clima{
+  display:none;
+  width: 0%;
+  }
+  .logo-img-responsive{
+    display:block;
+    height: 60px;
+  }
+  .logo-img{
+    display: none;
+  }
+  .navbar-toggler-icon{
+    display: block;
+  }
+  #desktop-menu{
+    display: none;
+  }
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  .barra-clima{
+  display:none;
+  width: 0%;
+  }
+  .logo-img-responsive{
+    display:block;
+    height: 60px;
+  }
+  .logo-img{
+    display: none;
+  }
+  .navbar-toggler-icon{
+    display: block;
+  }
+  #desktop-menu{
+    display: none;
+  }
+
+}

@@ -59874,7 +59874,9 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
  */
 
 
-__webpack_require__(/*! ./components/Example */ "./resources/js/components/Example.js");
+__webpack_require__(/*! ./components/Noticia */ "./resources/js/components/Noticia.js");
+
+__webpack_require__(/*! ./components/Agregar */ "./resources/js/components/Agregar.js");
 
 /***/ }),
 
@@ -59936,16 +59938,16 @@ if (token) {
 
 /***/ }),
 
-/***/ "./resources/js/components/Example.js":
+/***/ "./resources/js/components/Agregar.js":
 /*!********************************************!*\
-  !*** ./resources/js/components/Example.js ***!
+  !*** ./resources/js/components/Agregar.js ***!
   \********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Example; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Agregar; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
@@ -59971,43 +59973,238 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var Example =
+var Agregar =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(Example, _Component);
+  _inherits(Agregar, _Component);
 
-  function Example() {
-    _classCallCheck(this, Example);
+  function Agregar() {
+    _classCallCheck(this, Agregar);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Example).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Agregar).apply(this, arguments));
   }
 
-  _createClass(Example, [{
+  _createClass(Agregar, [{
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row justify-content-center"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-8"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card-header"
-      }, "Example Component"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card-body"
-      }, "I'm an example component!")))));
+        className: "alert alert-info"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Categor\xEDa")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+        name: "categoria",
+        className: "form-control "
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        value: "Destacadas"
+      }, "Noticia destacada"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        value: "Nacionales"
+      }, "Nacional"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        value: "Provinciales"
+      }, "Provincial"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        value: "Regionales"
+      }, " Regional"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        value: "Sociales"
+      }, "Social"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        value: "Agro"
+      }, "Agro")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "alert alert-info"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "T\xEDtulo")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        className: "form-control",
+        name: "titulo",
+        placeholder: "Ingresa el t\xEDtulo de la noticia .. "
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "alert alert-info"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Subtitulo")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        className: "form-control",
+        name: "subtitulo",
+        placeholder: "Ingresa el subtitulo de la noticia.."
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "alert alert-info mt-1"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Cuerpo")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+        className: "form-control",
+        name: "cuerpo"
+      }, "Ingresa el cuerpo de la noticia, (\xE9ste campo es obligatorio) .."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "alert alert-info mt-1"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Imagen")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        className: "btn btn-primary",
+        name: "fichero",
+        type: "file"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "alert alert-info mt-1"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Epigrafe")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        name: "epigrafe",
+        className: "form-control",
+        placeholder: "Ingresa el ep\xEDgrafe de la noticia.."
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        className: "btn btn-info mt-1",
+        type: "submit",
+        name: "boton",
+        value: "enviar noticia"
+      }));
     }
   }]);
 
-  return Example;
+  return Agregar;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
 
-if (document.getElementById('example')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Example, null), document.getElementById('example'));
+if (document.getElementById('agregar')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Agregar, null), document.getElementById('agregar'));
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/Noticia.js":
+/*!********************************************!*\
+  !*** ./resources/js/components/Noticia.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Noticia; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+var Noticia =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Noticia, _Component);
+
+  function Noticia() {
+    var _this;
+
+    _classCallCheck(this, Noticia);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Noticia).call(this));
+    _this.state = {
+      destacada: []
+    };
+    return _this;
+  }
+
+  _createClass(Noticia, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      axios.get('http://localhost:8000/noticias').then(function (response) {
+        _this2.setState({
+          destacada: response.data
+        });
+
+        console.log(_this2.state.destacada[0].titulo);
+      }).catch(function (error) {
+        console.log(error);
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container mt-3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-8"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "header-destacada"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+        className: "titulo-destacada"
+      }, "Destacadas")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "titulo-noticia"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "subtitulo-noticia"
+      }, "La Coalici\xF3n C\xEDvica volvi\xF3 a poner la lupa sobre una iniciativa de la Casa Rosada, en este caso del Ministerio de Justicia que conduce Germ\xE1n Garavano."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        width: "100%",
+        src: "img/cristina.jpg"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row mt-3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-6"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "header-social"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+        className: "titulo-social"
+      }, "Sociales")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "titulo-noticia-bloque"
+      }, "El Riesgo Pa\xEDs resta otro 3% y retrocede a niveles de tres meses atr\xE1s"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "subtitulo-noticia-bloque"
+      }, "El indicador de JP Morgan cae a 629 puntos b\xE1sicos, el m\xE1s bajo desde el pasado 12 de noviembre. Desde el 28 de diciembre retrocedi\xF3 m\xE1s de 200 unidades."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        width: "100%",
+        src: "img/bolsa.jpg"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-6"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "header-agro"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+        className: "titulo-agro"
+      }, "Agro")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "titulo-noticia-bloque"
+      }, "El Riesgo Pa\xEDs resta otro 3% y retrocede a niveles de tres meses atr\xE1s"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "subtitulo-noticia-bloque"
+      }, "El indicador de JP Morgan cae a 629 puntos b\xE1sicos, el m\xE1s bajo desde el pasado 12 de noviembre. Desde el 28 de diciembre retrocedi\xF3 m\xE1s de 200 unidades."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        width: "100%",
+        src: "img/bolsa.jpg"
+      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "header-nacional"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+        className: "titulo-nacional"
+      }, "Nacionales")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "titulo-noticia-bloque"
+      }, "El Riesgo Pa\xEDs resta otro 3% y retrocede a niveles de tres meses atr\xE1s"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "subtitulo-noticia-bloque"
+      }, "El indicador de JP Morgan cae a 629 puntos b\xE1sicos, el m\xE1s bajo desde el pasado 12 de noviembre. Desde el 28 de diciembre retrocedi\xF3 m\xE1s de 200 unidades."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        width: "100%",
+        src: "img/bolsa.jpg"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "header-provincial mt-4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+        className: "titulo-provincial"
+      }, "Provinciales")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "titulo-noticia-bloque"
+      }, "Nuevo registro de mujeres aspirantes a choferes de colectivo."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "subtitulo-noticia-bloque"
+      }, "A partir de la demanda de una chofer de colectivo a tres empresas que se negaron a contratarla por ser mujer, la Secretar\xEDa de Trabajo present\xF3 oficialmente un listado que las registra y que obliga a esas empresas a tener un cupo de mujeres al volante."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        width: "100%",
+        src: "img/conductoras.jpg"
+      }))));
+    }
+  }]);
+
+  return Noticia;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+if (document.getElementById('noticias')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Noticia, null), document.getElementById('noticias'));
 }
 
 /***/ }),
@@ -60030,8 +60227,8 @@ if (document.getElementById('example')) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\matu_\Desktop\xaca\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\matu_\Desktop\xaca\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\matu_\OneDrive\Escritorio\noticias\xaca\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\matu_\OneDrive\Escritorio\noticias\xaca\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
