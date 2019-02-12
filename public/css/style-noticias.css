@@ -25,6 +25,17 @@
       margin-left: 15px;
       margin-top: 5px;
 }
+.titulo-regional{
+      color: #ed553b;
+      font-weight: bold;
+      -webkit-transform: skew(20deg);
+      -moz-transform: skew(20deg);
+      -ms-transform: skew(20deg);
+      -o-transform: skew(20deg);
+      transform: skew(20deg);
+      margin-left: 15px;
+      margin-top: 5px;
+}
 .titulo-nacional{
       color: #0894A1;
       font-weight: bold;
@@ -80,6 +91,16 @@
   border-color: #112f41;
   border-width: 2px;
 }
+.header-regional{
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+  border-style: solid;
+  border-color: #ed553b;
+  border-width: 2px;
+}
 .header-nacional{
   -webkit-transform: skew(-20deg);
   -moz-transform: skew(-20deg);
@@ -129,4 +150,12 @@
 .subtitulo-noticia-bloque{
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
+}
+.epigrafe-noticia{
+  color: #8a8a8a;
+    font-size: 13px;
+    font-weight: bold;
+}
+.cuerpo-noticia{
+  font-size: 18px;
 }

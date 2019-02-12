@@ -16,8 +16,21 @@ class NoticiaController extends Controller
      */
     public function index()
     {
-        $noticias = Categoria::with('noticias')->orderBy('created_at', 'DESC')->get();
-        return view('index', ['noticias' => $noticias]);
+        $destacada = Categoria::with('noticias')->where('nombre', '=', 'Destacadas')->get();
+        $nacional = Categoria::with('noticias')->where('nombre', '=', 'Nacionales')->get();
+        $provincial = Categoria::with('noticias')->where('nombre', '=', 'Provinciales')->get();
+        $regional = Categoria::with('noticias')->where('nombre', '=', 'Regionales')->get();
+        $social = Categoria::with('noticias')->where('nombre', '=', 'Sociales')->get();
+        $agro = Categoria::with('noticias')->where('nombre', '=', 'Agro')->get();
+        $variadas = Categoria::with('noticias')->get();
+        return view('index', ['destacada' => $destacada,
+        'nacional' => $nacional,
+        'provincial' => $provincial,
+        'regional' => $regional,
+        'social' => $social,
+        'agro' => $agro,
+        'variadas' => $variadas
+      ]);
     }
 
     public function noticias()
@@ -60,7 +73,7 @@ class NoticiaController extends Controller
         $noticia->cuerpo = $request['cuerpo'];
         $file = $request->file('fichero');
         $name = $file->store('noticias-img');
-        $noticia->img = $name;
+        $noticia->img = '/storage/' . $name;
         $noticia->epigrafe = $request['epigrafe'];
         $noticia->save();
         $noticia->categorias()->attach($categoria[0]['id']);
@@ -75,9 +88,31 @@ class NoticiaController extends Controller
      * @param  \App\Noticia  $noticia
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function show(Request $request)
     {
-      //
+          $id = $request['id'];
+          $destacada = Categoria::with('noticias')->where('nombre', '=', 'Destacadas')->get();
+          $nacional = Categoria::with('noticias')->where('nombre', '=', 'Nacionales')->get();
+          $provincial = Categoria::with('noticias')->where('nombre', '=', 'Provinciales')->get();
+          $regional = Categoria::with('noticias')->where('nombre', '=', 'Regionales')->get();
+          $social = Categoria::with('noticias')->where('nombre', '=', 'Sociales')->get();
+          $agro = Categoria::with('noticias')->where('nombre', '=', 'Agro')->get();
+          return view('destacadas', ['destacada' => $destacada,
+          'nacional' => $nacional,
+          'provincial' => $provincial,
+          'regional' => $regional,
+          'social' => $social,
+          'agro' => $agro,
+          'id' => $id
+        ]);
+    }
+
+    public function showNew(Request $request)
+    {
+      $noticia = Noticia::find($request['id']);
+      $nacional = Categoria::with('noticias')->where('nombre', '=', 'Nacionales')->get();
+      $provincial = Categoria::with('noticias')->where('nombre', '=', 'Provinciales')->get();
+      return view('new', ['noticia' => $noticia, 'nacional' => $nacional, 'provincial' => $provincial]);
     }
 
     /**

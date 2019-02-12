@@ -19,3 +19,5 @@ Route::get('/', 'NoticiaController@index');
 Route::get('/agregar', 'NoticiaController@agregar')->name('Noticia.agregar');
 Route::POST('/Agregando', 'NoticiaController@store')->name('Noticia.store');
 Route::get('/noticias', 'NoticiaController@noticias');
+Route::get('/News','NoticiaController@show')->name('Noticia.show');
+Route::get('/New','NoticiaController@showNew')->name('Noticia.showNew');

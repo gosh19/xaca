@@ -10,7 +10,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>xAca - Portal de noticias</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -63,22 +63,22 @@
           <div class="container">
             <div class="row text-center" style="width:100%; font-family: 'Open Sans', sans-serif;font-size: 18px;font-weight: bold">
               <div class="col-md-2 fondo-menu" style="background: #112f41;">
-                    <a class="link-menu" href="#">Destacadas</a>
+                    <a class="link-menu" href="{{ route('Noticia.show', ['id' => 'destacadas'])}}">Destacadas</a>
               </div>
               <div class="col-md-2 fondo-menu" style="background: #0894A1;">
-                    <a href="#" class="link-menu">Nacionales</a>
+                    <a href="{{ route('Noticia.show', ['id' => 'nacionales'])}}" class="link-menu">Nacionales</a>
               </div>
               <div class="col-md-2 fondo-menu" style="background: #b51808;">
-                    <a class="link-menu" href="#">Provinciales</a>
+                    <a class="link-menu" href="{{ route('Noticia.show', ['id' => 'provinciales'])}}">Provinciales</a>
               </div>
               <div class="col-md-2 fondo-menu" style="background: #ED553B;">
-                    <a class="link-menu" href="#">Regionales</a>
+                    <a class="link-menu" href="{{ route('Noticia.show', ['id' => 'regionales'])}}">Regionales</a>
               </div>
               <div class="col-md-2 fondo-menu" style="background: #F2B134;">
-                    <a class="link-menu" href="#">Sociales</a>
+                    <a class="link-menu" href="{{ route('Noticia.show', ['id' => 'sociales'])}}">Sociales</a>
               </div>
               <div class="col-md-2 fondo-menu" style="background: #47AB6C;">
-                    <a class="link-menu" href="#">Agro</a>
+                    <a class="link-menu" href="{{ route('Noticia.show', ['id' => 'agros'])}}">Agro</a>
               </div>
           </div>
         </div>
