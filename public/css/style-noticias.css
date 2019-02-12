@@ -1,0 +1,161 @@
+
+.titulo-noticia{
+  margin-top: 20px;
+  font-family: neue-aachen-pro, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 80%;
+}
+.titulo-noticia-bloque{
+  margin-top: 20px;
+  font-family: neue-aachen-pro, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 80%;
+}
+
+.titulo-destacada{
+      color: #112f41;
+      font-weight: bold;
+      -webkit-transform: skew(20deg);
+      -moz-transform: skew(20deg);
+      -ms-transform: skew(20deg);
+      -o-transform: skew(20deg);
+      transform: skew(20deg);
+      margin-left: 15px;
+      margin-top: 5px;
+}
+.titulo-regional{
+      color: #ed553b;
+      font-weight: bold;
+      -webkit-transform: skew(20deg);
+      -moz-transform: skew(20deg);
+      -ms-transform: skew(20deg);
+      -o-transform: skew(20deg);
+      transform: skew(20deg);
+      margin-left: 15px;
+      margin-top: 5px;
+}
+.titulo-nacional{
+      color: #0894A1;
+      font-weight: bold;
+      -webkit-transform: skew(20deg);
+      -moz-transform: skew(20deg);
+      -ms-transform: skew(20deg);
+      -o-transform: skew(20deg);
+      transform: skew(20deg);
+      margin-left: 15px;
+      margin-top: 5px;
+}
+.titulo-provincial{
+      color: #b51808;
+      font-weight: bold;
+      -webkit-transform: skew(20deg);
+      -moz-transform: skew(20deg);
+      -ms-transform: skew(20deg);
+      -o-transform: skew(20deg);
+      transform: skew(20deg);
+      margin-left: 15px;
+      margin-top: 5px;
+}
+.titulo-social{
+      color: #F2B134;
+      font-weight: bold;
+      -webkit-transform: skew(20deg);
+      -moz-transform: skew(20deg);
+      -ms-transform: skew(20deg);
+      -o-transform: skew(20deg);
+      transform: skew(20deg);
+      margin-left: 15px;
+      margin-top: 5px;
+}
+.titulo-agro{
+      color: #47AB6C;
+      font-weight: bold;
+      -webkit-transform: skew(20deg);
+      -moz-transform: skew(20deg);
+      -ms-transform: skew(20deg);
+      -o-transform: skew(20deg);
+      transform: skew(20deg);
+      margin-left: 15px;
+      margin-top: 5px;
+}
+
+.header-destacada{
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+  border-style: solid;
+  border-color: #112f41;
+  border-width: 2px;
+}
+.header-regional{
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+  border-style: solid;
+  border-color: #ed553b;
+  border-width: 2px;
+}
+.header-nacional{
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+  border-style: solid;
+  border-color: #0894A1;
+  border-width: 2px;
+}
+.header-provincial{
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+  border-style: solid;
+  border-color: #b51808;
+  border-width: 2px;
+}
+
+.header-social{
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+  border-style: solid;
+  border-color: #F2B134;
+  border-width: 2px;
+}
+
+.header-agro{
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+  border-style: solid;
+  border-color: #47AB6C;
+  border-width: 2px;
+}
+.subtitulo-noticia{
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
+.subtitulo-noticia-bloque{
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+}
+.epigrafe-noticia{
+  color: #8a8a8a;
+    font-size: 13px;
+    font-weight: bold;
+}
+.cuerpo-noticia{
+  font-size: 18px;
+}
