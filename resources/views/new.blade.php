@@ -12,6 +12,13 @@
       <img width="100%" src="{{ $noticia->img}}" />
       <p class="epigrafe-noticia">{{$noticia->epigrafe}}</p>
       <p class="cuerpo-noticia">{{$noticia->cuerpo}}</p>
+
+
+
+{{-- --}}
+
+
+
   </div>
 
   <div class="col-md-4">
