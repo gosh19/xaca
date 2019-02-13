@@ -12,8 +12,21 @@
       <img width="100%" src="{{ $noticia->img}}" />
       <p class="epigrafe-noticia">{{$noticia->epigrafe}}</p>
       <p class="cuerpo-noticia">{{$noticia->cuerpo}}</p>
-  </div>
 
+      <div class="comentarios">
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="{{url()->current(). $id}}" data-width="100%" data-numposts="1"></div>
+      </div>
+
+  </div>
   <div class="col-md-4">
   <div class="header-nacional">
       <h4 class="titulo-nacional" >Nacionales</h4>

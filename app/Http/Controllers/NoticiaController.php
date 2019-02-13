@@ -112,7 +112,7 @@ class NoticiaController extends Controller
       $noticia = Noticia::find($request['id']);
       $nacional = Categoria::with('noticias')->where('nombre', '=', 'Nacionales')->get();
       $provincial = Categoria::with('noticias')->where('nombre', '=', 'Provinciales')->get();
-      return view('new', ['noticia' => $noticia, 'nacional' => $nacional, 'provincial' => $provincial]);
+      return view('new', ['noticia' => $noticia, 'nacional' => $nacional, 'provincial' => $provincial, 'id' => $request['id']]);
     }
 
     /**
