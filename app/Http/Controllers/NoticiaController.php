@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Noticia;
 use App\Categoria;
+use App\Publicidad;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -22,6 +23,7 @@ class NoticiaController extends Controller
         $regional = Categoria::with('noticias')->where('nombre', '=', 'Regionales')->get();
         $social = Categoria::with('noticias')->where('nombre', '=', 'Sociales')->get();
         $agro = Categoria::with('noticias')->where('nombre', '=', 'Agro')->get();
+        $publicidad = Publicidad::all();
         $variadas = Categoria::with('noticias')->get();
         return view('index', ['destacada' => $destacada,
         'nacional' => $nacional,
@@ -29,7 +31,8 @@ class NoticiaController extends Controller
         'regional' => $regional,
         'social' => $social,
         'agro' => $agro,
-        'variadas' => $variadas
+        'variadas' => $variadas,
+        'publicidad' => $publicidad
       ]);
     }
 
@@ -46,7 +49,8 @@ class NoticiaController extends Controller
 
     public function agregar()
     {
-      return view('agregar');
+      $publicidad = Publicidad::all();
+      return view('agregar', ['publicidad' => $publicidad]);
     }
     /**
      * Show the form for creating a new resource.
@@ -55,7 +59,17 @@ class NoticiaController extends Controller
      */
     public function create()
     {
-        //
+        return view('auth.login');
+    }
+    public function register()
+    {
+        return view('auth.register');
+    }
+
+    public function modificar()
+    {
+        $noticias = Noticia::orderBy('created_at', 'ASC')->paginate(12);
+        return view('modificar', ['noticias' => $noticias]);
     }
 
     /**
@@ -71,6 +85,9 @@ class NoticiaController extends Controller
         $noticia->titulo = $request['titulo'];
         $noticia->subtitulo = $request['subtitulo'];
         $noticia->cuerpo = $request['cuerpo'];
+        if($request['video'] != ' '){
+          $noticia->video = $request['video'];
+        }
         $file = $request->file('fichero');
         $name = $file->store('noticias-img');
         $noticia->img = '/storage/' . $name;
@@ -97,13 +114,15 @@ class NoticiaController extends Controller
           $regional = Categoria::with('noticias')->where('nombre', '=', 'Regionales')->get();
           $social = Categoria::with('noticias')->where('nombre', '=', 'Sociales')->get();
           $agro = Categoria::with('noticias')->where('nombre', '=', 'Agro')->get();
+          $publicidad = Publicidad::all();
           return view('destacadas', ['destacada' => $destacada,
           'nacional' => $nacional,
           'provincial' => $provincial,
           'regional' => $regional,
           'social' => $social,
           'agro' => $agro,
-          'id' => $id
+          'id' => $id,
+          'publicidad' => $publicidad
         ]);
     }
 
@@ -112,7 +131,13 @@ class NoticiaController extends Controller
       $noticia = Noticia::find($request['id']);
       $nacional = Categoria::with('noticias')->where('nombre', '=', 'Nacionales')->get();
       $provincial = Categoria::with('noticias')->where('nombre', '=', 'Provinciales')->get();
-      return view('new', ['noticia' => $noticia, 'nacional' => $nacional, 'provincial' => $provincial]);
+      $publicidad = Publicidad::all();
+      return view('new', ['noticia' => $noticia,
+      'nacional' => $nacional,
+      'provincial' => $provincial,
+      'id' => $request['id'],
+      'publicidad' => $publicidad
+    ]);
     }
 
     /**
@@ -121,9 +146,10 @@ class NoticiaController extends Controller
      * @param  \App\Noticia  $noticia
      * @return \Illuminate\Http\Response
      */
-    public function edit(Noticia $noticia)
+    public function edit(Request $request)
     {
-        //
+        $noticia = Noticia::find($request['id']);
+        return view('editando', ['noticia' => $noticia]);
     }
 
     /**
@@ -133,9 +159,35 @@ class NoticiaController extends Controller
      * @param  \App\Noticia  $noticia
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Noticia $noticia)
+    public function update(Request $request)
     {
-        //
+            $noticia = Noticia::find($request['id']);
+
+            if($request['titulo'] != ""){
+              $noticia->titulo = $request['titulo'];
+              $noticia->save();
+
+            }
+            if($request['subtitulo'] != ""){
+              $noticia->subtitulo = $request['subtitulo'];
+              $user->save();
+            }
+            if($request['cuerpo'] != ""){
+              $user->dni = $request['cuerpo'];
+              $user->save();
+            }
+            if($request->hasFile('fichero')){
+              $file = $request->file('fichero');
+              $name = $file->store('noticias-img');
+              $noticia->img = '/storage/' . $name;
+              $noticia->save();
+            }
+            if($request['epigrafe'] != ""){
+              $noticia->epigrafe = $request['epigrafe'];
+              $user->save();
+            }
+
+            return redirect('/modificar');
     }
 
     /**

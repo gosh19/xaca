@@ -36,12 +36,16 @@ export default class Agregar extends Component {
 
           <input className="btn btn-primary" name="fichero" type="file"  />
 <br />
+
+  <div className="alert alert-danger mt-3"><strong>Url de Video de YouTube (No obligatorio)</strong></div>
+
+  <input name="video" className="form-control" placeholder="Ingrese la url del video de youtube" />
+
+<br />
       <div className="alert alert-info mt-1"><strong>Epigrafe</strong></div>
-      <br />
-      	 <input name="epigrafe" className="form-control" placeholder="Ingresa el epígrafe de la noticia.." />
+      	 <input name="epigrafe" className="form-control" placeholder="Ingresa el epígrafe de la noticia.." required />
 <br />
       <input className="btn btn-info mt-1" type="submit" name="boton" value="enviar noticia" />
-
       </div>
 
         );

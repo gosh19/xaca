@@ -55,6 +55,7 @@
           @endfor
         @endif
 
+
         @if($id == 'regionales')
           <div class="header-regional">
               <h4 class="titulo-regional">Regionales</h4>
@@ -70,6 +71,7 @@
               @endif
           @endfor
         @endif
+
 
         @if($id == 'sociales')
           <div class="header-social">
@@ -234,6 +236,11 @@
                 @endfor
                 @endif
             @endfor
+            <img width="100%" id="publi1" src="{{$publicidad[0]['publi1']}}" style="margin-top: 30px;" />
+            <img width="100%" id="publi2"src="{{$publicidad[0]['publi2']}}" style="margin-top: 30px;" />
+            <img width="100%" id="publi3" src="{{$publicidad[0]['publi3']}}" style="margin-top: 30px;" />
+            <img width="100%" id="publi4" src="{{$publicidad[0]['publi4']}}" style="margin-top: 30px;" />
+            <img width="100%" id="publi5" src="{{$publicidad[0]['publi5']}}" style="margin-top: 30px;" />
         </div>
 
     </div>

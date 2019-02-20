@@ -60030,11 +60030,18 @@ function (_Component) {
         name: "fichero",
         type: "file"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "alert alert-danger mt-3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Url de Video de YouTube (No obligatorio)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        name: "video",
+        className: "form-control",
+        placeholder: "Ingrese la url del video de youtube"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "alert alert-info mt-1"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Epigrafe")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Epigrafe")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         name: "epigrafe",
         className: "form-control",
-        placeholder: "Ingresa el ep\xEDgrafe de la noticia.."
+        placeholder: "Ingresa el ep\xEDgrafe de la noticia..",
+        required: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         className: "btn btn-info mt-1",
         type: "submit",
@@ -60227,8 +60234,8 @@ if (document.getElementById('noticias')) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\matu_\Desktop\xaca\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\matu_\Desktop\xaca\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\matu_\OneDrive\Escritorio\noticias\xaca\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\matu_\OneDrive\Escritorio\noticias\xaca\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
