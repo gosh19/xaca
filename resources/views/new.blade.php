@@ -145,8 +145,13 @@
       <p class="epigrafe-noticia">{{$noticia->epigrafe}}</p>
       @if($noticia->video)
         <p class="titulo-noticia text-center" style="font-size: 30px;">Video</p>
+
+          <video id="my-video" class="video-js" controls preload="auto" width="100%" height="300" data-setup="{}">
+              <source src="{{$noticia->video}}" type='video/mp4'>
+          </video>
+
         <div class="row justify-content-center">
-        {{$noticia->video}}
+
         </div>
       @endif
       <p class="cuerpo-noticia mt-3">{{$noticia->cuerpo}}</p>
