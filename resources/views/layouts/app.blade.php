@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="utf-8">
+
+<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-
-    <!-- CSRF Token -->
+<!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>xAca - Portal de noticias</title>
 
-    <!-- Scripts -->
+<!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
-    <!-- Fonts -->
+<!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
-    <!-- Styles -->
+<!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style-menu.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style-noticias.css') }}" rel="stylesheet">
@@ -30,7 +30,7 @@
     <div id="app">
           <div class="barra-clima bg-dark">
               <div class="container">
-                  <div class="text-white">General Villegas, Viernes 01 de febrero de 2019   <strong>|</strong> T 20° H 61% <img height="20" src="img/clima.png" /> <span style="float:right;">
+                  <div class="text-white">General Villegas, Viernes 01 de febrero de 2019   <strong>|</strong>  <img height="20" src="img/clima.png" /> <span style="float:right;">T 20° H 61%
             Compra: U$D 38,50 | Venta: U$D 38,50</span></div>
           </div>
           </div>
@@ -39,12 +39,12 @@
             <div class="collapse" id="navbarToggleExternalContent">
               <div class="bg-light p-4">
                 <h4 class="text-dark text-center">Categorías en xAcá</h4>
-                <a href="{{ route('Noticia.show', ['id' => 'destacadas'])}}"><h6 class="text-dark text-center">Destacados </h6></a>
-                <a href="{{ route('Noticia.show', ['id' => 'nacionales'])}}"><h6 class="text-dark text-center">Nacionales </h6></a>
-                <a href="{{ route('Noticia.show', ['id' => 'provinciales'])}}"><h6 class="text-dark text-center">Provinciales </h6></a>
-                <a href="{{ route('Noticia.show', ['id' => 'regionales'])}}"><h6 class="text-dark text-center">Regionales </h6></a>
-                <a href="{{ route('Noticia.show', ['id' => 'sociales'])}}"><h6 class="text-dark text-center">Sociales </h6></a>
-                <a href="{{ route('Noticia.show', ['id' => 'agros'])}}"><h6 class="text-dark text-center">Agro </h6></a>
+                <h6 class="text-dark text-center">Destacados </h6>
+                <h6 class="text-dark text-center">Nacionales </h6>
+                <h6 class="text-dark text-center">Provinciales </h6>
+                <h6 class="text-dark text-center">Regionales </h6>
+                <h6 class="text-dark text-center">Sociales </h6>
+                <h6 class="text-dark text-center">Agro </h6>
               </div>
             </div>
             <nav class="navbar navbar-dark bg-secondary">
@@ -56,7 +56,7 @@
           </div>
 
           <div class="container">
-              <div id="logo"><a href="{{route('Noticia.index')}}"><img class="logo-img" src="img/logo.png" /></a></div>
+              <div id="logo"><img class="logo-img" src="img/logo.png" /></div>
           </div>
 
         <nav id="desktop-menu" class="navbar">

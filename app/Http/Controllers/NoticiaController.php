@@ -24,6 +24,7 @@ class NoticiaController extends Controller
         $social = Categoria::with('noticias')->where('nombre', '=', 'Sociales')->get();
         $agro = Categoria::with('noticias')->where('nombre', '=', 'Agro')->get();
         $publicidad = Publicidad::all();
+
         $variadas = Categoria::with('noticias')->get();
         return view('index', ['destacada' => $destacada,
         'nacional' => $nacional,
@@ -115,6 +116,7 @@ class NoticiaController extends Controller
           $social = Categoria::with('noticias')->where('nombre', '=', 'Sociales')->get();
           $agro = Categoria::with('noticias')->where('nombre', '=', 'Agro')->get();
           $publicidad = Publicidad::all();
+
           return view('destacadas', ['destacada' => $destacada,
           'nacional' => $nacional,
           'provincial' => $provincial,
