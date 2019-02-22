@@ -25,8 +25,13 @@
       <p class="epigrafe-noticia">{{$noticia->epigrafe}}</p>
       @if($noticia->video)
         <p class="titulo-noticia text-center" style="font-size: 30px;">Video</p>
+
+          <video id="my-video" class="video-js" controls preload="auto" width="100%" height="300" data-setup="{}">
+              <source src="{{$noticia->video}}" type='video/mp4'>
+          </video>
+
         <div class="row justify-content-center">
-        {{$noticia->video}}
+
         </div>
       @endif
       <p class="cuerpo-noticia mt-3">{{$noticia->cuerpo}}</p>
@@ -97,11 +102,13 @@
           @endif
       @endfor
 
-      <img width="100%" id="publi1" src="{{$publicidad[0]['publi1']}}" style="margin-top: 30px;" />
-      <img width="100%" id="publi2" src="{{$publicidad[0]['publi2']}}" style="margin-top: 30px;" />
-      <img width="100%" id="publi3" src="{{$publicidad[0]['publi3']}}" style="margin-top: 30px;" />
-      <img width="100%" id="publi4" src="{{$publicidad[0]['publi4']}}" style="margin-top: 30px;" />
-      <img width="100%" id="publi5" src="{{$publicidad[0]['publi5']}}" style="margin-top: 30px;" />
+      @for ($i=0; $i < count($publicidad); $i++)
+        <img width="100%" id="publi1" src="{{$publicidad[$i]['publi1']}}" style="margin-top: 30px;" />
+        <img width="100%" id="publi2" src="{{$publicidad[$i]['publi2']}}" style="margin-top: 30px;" />
+        <img width="100%" id="publi3" src="{{$publicidad[$i]['publi3']}}" style="margin-top: 30px;" />
+        <img width="100%" id="publi4" src="{{$publicidad[$i]['publi4']}}" style="margin-top: 30px;" />
+        <img width="100%" id="publi5" src="{{$publicidad[$i]['publi5']}}" style="margin-top: 30px;" />
+      @endfor
 
   </div>
   </div>

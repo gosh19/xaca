@@ -60032,9 +60032,9 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "alert alert-danger mt-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Url de Video de YouTube (No obligatorio)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        className: "btn btn-danger",
         name: "video",
-        className: "form-control",
-        placeholder: "Ingrese la url del video de youtube"
+        type: "file"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "alert alert-info mt-1"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Epigrafe")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {

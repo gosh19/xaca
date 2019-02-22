@@ -85,8 +85,10 @@ class NoticiaController extends Controller
         $noticia->titulo = $request['titulo'];
         $noticia->subtitulo = $request['subtitulo'];
         $noticia->cuerpo = $request['cuerpo'];
-        if($request['video'] != ' '){
-          $noticia->video = $request['video'];
+        if($request->hasFile('video')){
+          $file = $request->file('video');
+          $name = $file->store('noticias-img');
+          $noticia->video = '/storage/' . $name;
         }
         $file = $request->file('fichero');
         $name = $file->store('noticias-img');

@@ -39,7 +39,7 @@ export default class Agregar extends Component {
 
   <div className="alert alert-danger mt-3"><strong>Url de Video de YouTube (No obligatorio)</strong></div>
 
-  <input name="video" className="form-control" placeholder="Ingrese la url del video de youtube" />
+  <input className="btn btn-danger" name="video" type="file"  />
 
 <br />
       <div className="alert alert-info mt-1"><strong>Epigrafe</strong></div>
