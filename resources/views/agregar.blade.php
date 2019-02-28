@@ -34,7 +34,7 @@
       <form class="form-group" action="{{route('Publicidad.update', ['id' => $publicidad[0]['id'], 'publi' => 1])}}" method="POST" enctype="multipart/form-data">
         @csrf
         <h4>Publicidad 1 Actual</h4>
-        <img style="width:100%;" src="/storage/publicidad/BFjZXPY9IB3QXWsrAN3urBE0voKoCybjl7nIiSaa.jpeg" />
+        <img style="width:100%;" src="{{$publicidad[0]['publi1']}}" />
         <h6 class="text-secondary">Si desea reemplazar la imagen seleccione la imagen a continuación.</h6>
         <input class="btn btn-primary mt-2" name="fichero1" type="file"  />
         <input type="submit" class="btn btn-danger mt-4" value="Reemplazar publicidad">

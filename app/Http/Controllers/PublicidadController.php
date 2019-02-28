@@ -73,7 +73,7 @@ class PublicidadController extends Controller
 
         if($request['publi'] == 1){
           $file = $request->file('fichero1');
-          $name = $file->store('publicidad');
+          $name = $file->store('noticias-img');
           $publicidad->publi1 = '/storage/' . $name;
           $publicidad->save();
           return redirect('/agregar');
@@ -81,7 +81,7 @@ class PublicidadController extends Controller
 
         if($request['publi'] == 2){
           $file = $request->file('fichero2');
-          $name = $file->store('publicidad');
+          $name = $file->store('noticias-img');
           $publicidad->publi2 = '/storage/' . $name;
           $publicidad->save();
           return redirect('/agregar');
@@ -89,7 +89,7 @@ class PublicidadController extends Controller
 
         if($request['publi'] == 3){
           $file = $request->file('fichero3');
-          $name = $file->store('publicidad');
+          $name = $file->store('noticias-img');
           $publicidad->publi3 = '/storage/' . $name;
           $publicidad->save();
           return redirect('/agregar');
@@ -97,7 +97,7 @@ class PublicidadController extends Controller
 
         if($request['publi'] == 4){
           $file = $request->file('fichero4');
-          $name = $file->store('publicidad');
+          $name = $file->store('noticias-img');
           $publicidad->publi4 = '/storage/' . $name;
           $publicidad->save();
           return redirect('/agregar');
@@ -105,7 +105,7 @@ class PublicidadController extends Controller
 
         if($request['publi'] == 5){
           $file = $request->file('fichero5');
-          $name = $file->store('publicidad');
+          $name = $file->store('noticias-img');
           $publicidad->publi5 = '/storage/' . $name;
           $publicidad->save();
           return redirect('/agregar');
