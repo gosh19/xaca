@@ -4,11 +4,13 @@
 <head>
     <!-- You can use Open Graph tags to customize link previews.
     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    {{--
   <meta property="og:url"           content="http://xaca.com.ar/New?id={{$noticia->id}}" />
   <meta property="og:type"          content="website" />
   <meta property="og:title"         content="{{$noticia->titulo}}" />
   <meta property="og:description"   content="{{$noticia->subtitulo}}" />
   <meta property="og:image"         content="http://xaca.com.ar{{$noticia->img}}" />
+  --}}
 </head>
 
 
