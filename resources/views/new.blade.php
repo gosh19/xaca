@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @extends('layouts.app')
 
 
@@ -117,7 +116,6 @@
 
 
 @endsection
-=======
 @extends('layouts.app')
 
 
@@ -236,4 +234,3 @@
 
 
 @endsection
->>>>>>> f37906930f6e8a4d8ddb7a78acb009f0479a0f74
