@@ -58,6 +58,8 @@
                       @endif
                   @endfor
                   </div>
+                  @if (count($variadas) != 0)
+
                   @for($i = 0; $i < 2; $i++)
 
                       @if($variadas[$i]['nombre'] = 'Provincial')
@@ -69,11 +71,13 @@
                               <a style="color: black;" href="{{route('Noticia.showNew', ['id' => $variadas[$i]['noticias'][$x]['id']])}}"><p class="titulo-noticia-bloque"> {{$variadas[$i]['noticias'][$x]['titulo']}}</p></a>
                               <p class="subtitulo-noticia-bloque">{{$variadas[$i]['noticias'][$x]['subtitulo']}}</p>
                             </div>
-                            @endif
-                      @endfor
+                          @endif
+                        @endfor
                       @endif
 
-                  @endfor
+                   @endfor
+                
+                 @endif
               </div>
           </div>
 
