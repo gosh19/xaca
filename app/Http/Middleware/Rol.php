@@ -17,13 +17,14 @@ class Rol
     public function handle($request, Closure $next)
     {
     if(Auth::check()){
-
+      return $next($request);
+      /*
     if ((Auth::user()->rol=='admin')) {
         return $next($request);
 
      }else {
          return redirect('login');
-      }
+      }*/
     }else{
       return redirect('login');
     }

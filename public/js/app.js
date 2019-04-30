@@ -59995,17 +59995,17 @@ function (_Component) {
         name: "categoria",
         className: "form-control "
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-        value: "Destacadas"
+        value: "destacadas"
       }, "Noticia destacada"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-        value: "Nacionales"
+        value: "nacionales"
       }, "Nacional"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-        value: "Provinciales"
+        value: "provinciales"
       }, "Provincial"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-        value: "Regionales"
+        value: "regionales"
       }, " Regional"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-        value: "Sociales"
+        value: "sociales"
       }, "Social"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-        value: "Agro"
+        value: "agro"
       }, "Agro")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "alert alert-info"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "T\xEDtulo")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -60234,8 +60234,8 @@ if (document.getElementById('noticias')) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\matu_\OneDrive\Escritorio\noticias\xaca\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\matu_\OneDrive\Escritorio\noticias\xaca\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\matu_\Desktop\xaca\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\matu_\Desktop\xaca\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -93,7 +93,7 @@ class NoticiaController extends Controller
         }
         $file = $request->file('fichero');
         $name = $file->store('noticias-img');
-        $noticia->img = '/storage/' . $name;
+        $noticia->img ='/storage/'. $name;
         $noticia->epigrafe = $request['epigrafe'];
         $noticia->save();
         $noticia->categorias()->attach($categoria[0]['id']);

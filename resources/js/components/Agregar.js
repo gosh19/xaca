@@ -13,12 +13,12 @@ export default class Agregar extends Component {
       <div className="alert alert-info"><strong>Categoría</strong></div>
 
       <select name="categoria" className="form-control ">
-        <option value="Destacadas">Noticia destacada</option>
-        <option value="Nacionales">Nacional</option>
-        <option value="Provinciales">Provincial</option>
-        <option value="Regionales"> Regional</option>
-        <option value="Sociales">Social</option>
-        <option value="Agro">Agro</option>
+        <option value="destacadas">Noticia destacada</option>
+        <option value="nacionales">Nacional</option>
+        <option value="provinciales">Provincial</option>
+        <option value="regionales"> Regional</option>
+        <option value="sociales">Social</option>
+        <option value="agro">Agro</option>
       </select>
 <br />
       <div className="alert alert-info"><strong>Título</strong></div>

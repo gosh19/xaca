@@ -30,8 +30,8 @@
     <div id="app">
           <div class="barra-clima bg-dark">
               <div class="container">
-                  <div class="text-white">General Villegas, Viernes 01 de febrero de 2019   <strong>|</strong>  <img height="20" src="img/clima.png" /> <span style="float:right;">T 20° H 61%
-            Compra: U$D 38,50 | Venta: U$D 38,50</span></div>
+
+                  <div class="text-white"></div>
           </div>
           </div>
 
